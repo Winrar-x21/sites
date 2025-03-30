@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: rgb(244, 237, 250);
+    font-family: Cohin;
+}
+
+.card {
+    background-color: rgb(40, 40, 40);
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text > h3 {
+    font-size: 24px;
+    font-weight: 888;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card-text > p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   align-items: center;
+   justify-content: space-between; 
+}
+
+.card-footer > a {
+    background-color: crimson;
+    padding: 4px;
+    color: rgb(244, 237, 250);
+    text-decoration: none;
+    
+}
