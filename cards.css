@@ -1,7 +1,10 @@
 body {
     background-color: rgb(20, 20, 20);
     color: rgb(244, 237, 250);
-    font-family: Cohin;
+    font-family: matura mt script capitals;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .card {
@@ -15,6 +18,8 @@ body {
 
 .card > img {
     width: 100%;
+    height: 160px;
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -49,4 +54,23 @@ body {
     color: rgb(244, 237, 250);
     text-decoration: none;
     
+}
+
+.card-footer > a:hover{
+    background-color: rgb(137, 9, 9);
+    transform: scale(1.1);
+}
+
+.card-content {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px
 }
