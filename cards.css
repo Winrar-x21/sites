@@ -1,7 +1,7 @@
 body {
     background-color: rgb(20, 20, 20);
     color: rgb(244, 237, 250);
-    font-family: matura mt script capitals;
+    font-family: monospace;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,6 +15,7 @@ body {
     box-sizing: border-box;
     padding: 10px;
 }
+
 
 .card > img {
     width: 100%;

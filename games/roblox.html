@@ -4,16 +4,39 @@
     </head>
     <body>
         <h1>ROBLOX</h1>
+        <h2>Roblox - это увлекательная игра в которой тебе нужно будет играть!</h2>
         <div class="gallery">
             <div class="gallery_current">
-                <img src="../img/годзззззз.webp">
+                <img id='mainImage'src="../img/i.webp">
             <div>
                 <div class="gallery_list">
-                    <img src="../img/i.webp"/>
-                    <img src="../img/i (1).webp"/>
+                    <img id="firstImage"class="active" onclick="clickImage(event)" src="../img/i.webp"/>
+                    <img onclick="clickImage(event)" src="../img/i (1).webp"/>
+                    <img onclick="clickImage(event)" src="../img/images.webp"/>
+                    <img onclick="clickImage(event)" src="../img/images (1).webp"/>
+                    <img onclick="clickImage(event)" src="../img/hqdefault.webp"/>
                 </div>
             </div>
             </div>
         </div>
     </body>
+    <footer>
+        <h1>Скачать роблокс можно <a href="games/roblox.html">здесь</a></h1>
+        <h2>Но вы так же можете приобрести элитную версию у нас <a href="file:///C:/Users/user/Documents/sites/card.html">на сайте</a>!</h2>
+        <script>
+            var lastImageClicked = document.getElementById("firstImage")
+            function clickImage(event) {
+               const target = event.target
+               const mainImage = document.getElementById('mainImage')
+
+               const newImageURL = target.getAttribute('src')
+
+               mainImage.setAttribute('src', newImageURL)
+
+               lastImageClicked.classList.remove('active')
+               target.classList.add('active')
+               lastImageClicked = target
+            }
+        </script>
+    </footer>
 </html>
