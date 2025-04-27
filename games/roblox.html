@@ -26,6 +26,22 @@
                         </div>
                     </div>
                     <div class="header_info_bottom">
+                        <div class="tabs_group">
+                            <div class="tab_active" id="firstActiveTab" onclick="clickTab(event)" data-tab-id="tab_description" >описание</div>
+                            <div onclick="clickTab(event)" data-tab-id="tab_system_requirements">Системные требования</div>
+                        </div>
+                        <div id="tab_description">
+                            <p>Процессор: прокаченый</p>
+                            <p>Видюха: мощная</p>
+                            <p>Оперативка: большая</p>
+                            <p>система-удобная</p>
+                        </div>
+                        <div id="tab_system_requirements" class="invisible">
+                            <p>Процессор: notcol</p>
+                            <p>Видюха: safari.Papa</p>
+                            <p>Оперативка: FARTOR</p>
+                            <p>система-DickFort</p>
+                        </div>
 
                     </div>
                 </div>
@@ -49,20 +65,8 @@
     <footer>
         <h1>Our patreon: EBU_PSA.com</h1>
         <h4>Roglox corporation.offical</h4>
-        <script>
-            var lastImageClicked = document.getElementById("firstImage")
-            function clickImage(event) {
-               const target = event.target
-               const mainImage = document.getElementById('mainImage')
-
-               const newImageURL = target.getAttribute('src')
-
-               mainImage.setAttribute('src', newImageURL)
-
-               lastImageClicked.classList.remove('active')
-               target.classList.add('active')
-               lastImageClicked = target
-            }
-        </script>
+        
+        <script src="../js/tabs.js"></script>
+        <script src="../js/gallery.js"></script>
     </footer>
 </html>
